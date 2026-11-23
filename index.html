@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Two portfolio projects for showroom operations: a dashboard for appointments, sales, and reporting, and a tracker for invoices and payments.">
+<meta name="color-scheme" content="light">
+<title>Showroom Systems | Project Portfolio</title>
+<style>
+:root{color-scheme:light;--paper:#f8f5ef;--ink:#211e1a;--muted:#58544c;--line:#c9c2b5;--accent:#8b3e2c;--mono:ui-monospace,Menlo,Consolas,monospace;--serif:Georgia,"Times New Roman",serif;--sans:system-ui,-apple-system,sans-serif}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.55 var(--sans)}a{color:inherit}a:focus-visible{outline:3px solid #365a78;outline-offset:5px}.frame{width:min(100% - 3rem,70rem);margin-inline:auto}.masthead{border-bottom:1px solid var(--line);padding:1.15rem 0;display:flex;justify-content:space-between;align-items:center;gap:1rem}.index-label,.kicker,.card-number,.note{font:700 .72rem/1.4 var(--mono);letter-spacing:.12em;text-transform:uppercase}.index-label{display:flex;align-items:center;gap:.75rem}.dot{width:.65rem;height:.65rem;border-radius:50%;background:var(--accent)}.masthead .note{color:var(--muted);text-align:right}.hero{padding:clamp(3rem,8vw,6.5rem) 0 clamp(2.75rem,6vw,4.5rem);display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,.6fr);align-items:end;gap:2rem}.kicker,.card-number{color:var(--accent);margin:0 0 .8rem}.hero h1{margin:0;font:400 clamp(3.35rem,8vw,7rem)/.91 var(--serif);letter-spacing:-.065em}.hero h1 span{display:block}.hero p:last-child{margin:0 0 .18rem;max-width:27ch;color:var(--muted);font-size:1.03rem}.projects{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}.project{display:flex;flex-flow:column;background:var(--paper);min-width:0}.card-content{padding:clamp(1.15rem,3.6vw,2rem);display:flex;flex:1;flex-flow:column;align-items:flex-start}.project h2{margin:0;font:400 clamp(1.9rem,4vw,3.2rem)/1.02 var(--serif);letter-spacing:-.04em}.project p:not(.card-number){color:var(--muted);margin:.85rem 0 1.25rem;max-width:44ch}.preview-figure{margin:0;padding:.9rem .9rem .75rem;background:#ebe6dc;border-bottom:1px solid var(--line)}.visual{display:block;aspect-ratio:3/2;width:100%;height:auto;object-fit:cover;object-position:top;border:1px solid var(--line);border-radius:.2rem;background:#f4f0e8}.preview-figure figcaption{margin-top:.55rem;color:var(--muted);font-size:.76rem}.project-link{margin-top:auto;display:inline-flex;align-items:center;gap:1rem;min-height:44px;text-decoration:none;font-weight:720;padding:.1rem 0}.project-link span:first-child{border-bottom:1px solid var(--accent)}.project-link:hover{color:var(--accent)}.extra-views{width:100%;margin:.3rem 0 1rem}.extra-views summary{cursor:pointer;font-weight:700;min-height:44px;display:list-item;padding:.6rem 0}.extra-views figure{margin:0 0 .75rem}.extra-views img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:.2rem}.extra-views figcaption{font-size:.78rem;color:var(--muted);margin-top:.35rem}.arrow{font-size:1.2rem;color:var(--accent)}.closing{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;border-top:1px solid var(--line);margin-top:clamp(2rem,5vw,3.75rem);padding:1rem 0 1.8rem;color:var(--muted);font-size:.8rem}.closing .note{margin:0}.closing p:last-child{margin:0;text-align:right}
+@media(max-width:43rem){.hero{grid-template-columns:1fr;align-items:start;gap:1.2rem}.hero p:last-child{max-width:34ch}.projects{grid-template-columns:1fr}}
+@media(max-width:24rem){.frame{width:calc(100% - 2rem)}.masthead .note,.index-label,.note{font-size:.63rem}.closing{flex-direction:column;gap:.45rem}.closing p:last-child{text-align:left}.hero h1{font-size:3.15rem}}
+</style>
+</head>
+<body>
+<header class="frame masthead"><div class="index-label"><span class="dot" aria-hidden="true"></span>Project portfolio</div><span class="note">Showroom operations</span></header>
+<main class="frame">
+  <section class="hero" aria-labelledby="page-title">
+    <div><p class="kicker">Two tools for wholesale operations</p><h1 id="page-title"><span>Showroom</span><span>Systems</span></h1></div>
+    <p>I built two tools for a multi-brand showroom: a dashboard for market appointments and sales reporting, and a tracker for invoices and payments.</p>
+  </section>
+  <section class="projects" aria-label="Portfolio projects">
+    <article class="project">
+      <figure class="preview-figure">
+        <img class="visual" src="dashboard.jpg" width="1440" height="960" alt="Dashboard showing an appointment matrix by retailer and brand, with market and season filters." decoding="async">
+        <figcaption>Appointment matrix · Fictional data</figcaption>
+      </figure>
+      <div class="card-content"><p class="card-number">Market operations</p><h2>Showroom Dashboard</h2>
+      <p>See which retailers are booked for each brand, filter appointments by season and market, and compare sales across brands and retailers. The original connected calendar and CRM data to Google Sheets.</p>
+      <details class="extra-views"><summary>View Sales Analysis and Reports screenshots</summary>
+        <figure><img src="dashboard-sales.jpg" alt="Sales Analysis showing a fictional retailer by brand sales matrix." loading="lazy"><figcaption>Sales Analysis: retailer by brand · Fictional data</figcaption></figure>
+        <figure><img src="dashboard-reports.jpg" alt="Reports showing sample appointments and sales by market." loading="lazy"><figcaption>Showroom report by market · Fictional data</figcaption></figure>
+      </details>
+      <a class="project-link" href="https://aaatanasi.github.io/showroom-dashboard/"><span>Explore the dashboard</span></a><a class="project-link" href="https://github.com/aaatanasi/showroom-dashboard"><span>View dashboard repository</span></a></div>
+    </article>
+    <article class="project">
+      <figure class="preview-figure">
+        <img class="visual" src="invoice-tracker.jpg" width="1440" height="960" alt="Invoice tracker showing example records and payment statuses." decoding="async">
+        <figcaption>Invoice and payment status views · Fictional data</figcaption>
+      </figure>
+      <div class="card-content"><p class="card-number">Accounts receivable</p><h2>Invoice Tracker</h2>
+      <p>See outstanding, overdue, and paid invoices at a glance. The original used Google Sheets and Apps Script to bring review, payment status, and shipment tracking into one view.</p>
+      <a class="project-link" href="https://aaatanasi.github.io/invoice-tracker/"><span>Explore the invoice tracker</span></a><a class="project-link" href="https://github.com/aaatanasi/invoice-tracker"><span>View invoice tracker repository</span></a></div>
+    </article>
+  </section>
+</main>
+<footer class="frame closing"><p class="note">Portfolio previews</p><p>The code is based on tools I developed for real showroom workflows. The records and figures shown are fictional to protect client confidentiality.</p></footer>
+</body>
+</html>
