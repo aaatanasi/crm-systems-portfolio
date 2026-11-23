@@ -1,7 +1,7 @@
 # Systems Portfolio
 
-The code is based on tools I developed for real showroom workflows. The records and figures shown are fictional to protect client confidentiality.
+Two projects: a CRM and reporting dashboard and an invoice tracker.
 
-Curated portfolio of the Showroom Dashboard and Invoice Tracker. Both projects are interactive portfolio editions based on real workflows, without production integrations.
+The code is based on real projects I developed. The records and figures shown are fictional to protect client confidentiality.
 
 [Open the portfolio](https://aaatanasi.github.io/crm-systems-portfolio/).
