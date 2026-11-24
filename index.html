@@ -27,6 +27,7 @@ html{background:var(--canvas)}body{background:var(--paper);width:min(76rem,calc(
 .project-link,.formats a{font-size:.875rem}.project-link span:first-child{border-color:currentColor}::selection{background:var(--highlight);color:var(--ink)}
 @media(max-width:43rem){.hero h1{font-size:clamp(2.3rem,9vw,4.6rem)}.hero h1,.project h2,.prospect h2{letter-spacing:-.04em}}
 .outreach-preview{align-self:center;margin:0;min-width:0;border:1px solid var(--line);background:#f8f6f0}.outreach-preview figcaption,.outreach-actions{font:600 .72rem/1.4 var(--mono);letter-spacing:.035em;padding:.85rem 1rem}.outreach-preview figcaption{display:flex;justify-content:space-between;gap:.45rem;flex-wrap:wrap;background:var(--highlight)}.outreach-preview figcaption span,.outreach-actions{color:var(--muted)}.outreach-preview table{border-collapse:collapse;width:100%;text-align:left;font-size:.875rem}.outreach-preview th,.outreach-preview td{padding:.55rem 1rem;border-bottom:1px solid var(--line)}.outreach-preview th{font-family:var(--mono);font-weight:600}.outreach-actions span{margin-inline:.15rem}
+.sheet-preview a,.sheet-preview img{display:block;width:100%;height:auto}.sheet-preview figcaption{background:var(--paper);border-top:1px solid var(--line)}
 </style>
 </head>
 <body>
@@ -76,13 +77,10 @@ html{background:var(--canvas)}body{background:var(--paper);width:min(76rem,calc(
     <div><p class="card-number">Email operations</p><h2 id="outreach-title">Customer Email Automation</h2>
     <p>I built a Google Sheets and Apps Script workflow to send individual customer emails and track send activity in one place, without relying on Gmail’s built-in mail merge.</p>
     <p>From a custom menu in Google Sheets, the team could select a recipient group, update the message template, check the remaining sending quota, and send batches of pending messages. Per-recipient status and a 24-hour check against Sent helped prevent repeat sends.</p>
-    <a class="project-link" href="https://github.com/aaatanasi/crm-systems-portfolio/tree/main/customer-email-automation"><span>View workflow and code on GitHub</span></a></div>
-    <figure class="outreach-preview">
-      <figcaption>CUSTOM SHEETS MENU <span>SAMPLE RECORDS</span></figcaption>
-      <div class="outreach-actions" style="border-bottom:1px solid var(--line)">Email Sender ▾ <span>·</span> Check quota <span>·</span> Edit template <span>·</span> Check recent sends</div>
-      <table aria-label="Example customer email queue"><thead><tr><th scope="col">Recipient</th><th scope="col">Status</th></tr></thead><tbody>
-        <tr><td>Contact A</td><td>Sent</td></tr><tr><td>Contact B</td><td>Pending</td></tr><tr><td>Contact C</td><td>Sent</td></tr>
-      </tbody></table>
+    <a class="project-link" href="https://github.com/aaatanasi/customer-email-automation"><span>View code repository</span></a></div>
+    <figure class="outreach-preview sheet-preview">
+      <a href="sheets-preview.svg" aria-label="Open full-size Google Sheets preview"><img src="sheets-preview.svg" alt="Google Sheets recreation showing the Email Sender menu open over a fictional recipient queue, with actions to select a group, edit a template, check quota and check recent sends." loading="lazy"></a>
+      <figcaption>Custom Sheets menu <span>RECREATED WITH SAMPLE DATA</span></figcaption>
     </figure>
   </section>
 </main>
