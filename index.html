@@ -18,6 +18,14 @@ html{background:var(--canvas)}body{background:var(--paper);width:min(76rem,calc(
 .frame{width:calc(100% - clamp(2rem,7vw,6rem))}.hero{padding:clamp(3.2rem,10vw,9rem) 0 clamp(1.65rem,4vw,3rem)}.hero h1{font-size:clamp(2.65rem,8.2vw,7.2rem);line-height:.91;letter-spacing:-.078em;text-wrap:balance;border-bottom:1px solid var(--line);padding-bottom:.19em}
 .project h2,.prospect h2{letter-spacing:-.055em}.card-number,.note{letter-spacing:.085em}.preview-figure{background:#e6e4dc}.visual,.extra-views img{border-radius:0;background:#e6e4dc}.project-link,.formats a{color:var(--accent)}.project-link:hover,.formats a:hover{color:#172763}.project-link:focus-visible,.formats a:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:4px}.project-link + .project-link{margin-top:0}.prospect .project-link{margin-top:.55rem}.formats a{text-underline-offset:.18em}.closing{padding-bottom:2rem}
 @media(max-width:43rem){body{width:calc(100% - 1.25rem);margin:.625rem auto}.frame{width:calc(100% - 2rem)}.hero{padding:clamp(3.1rem,13vw,5rem) 0 1.6rem}.hero h1{font-size:clamp(2.45rem,10.5vw,4.6rem)}}
+/* Sans and typewriter pairing */
+:root{--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;--highlight:#c3d9f8}
+.hero h1,.project h2,.prospect h2{font-family:var(--sans);font-weight:500;text-transform:uppercase;letter-spacing:-.06em;line-height:.96}
+.hero h1{font-size:clamp(2.4rem,7.3vw,6.55rem)}
+.card-number,.preview-figure figcaption,.extra-views figcaption,.closing,.project-link,.formats a{font-family:var(--mono)}
+.card-number{display:table;color:var(--ink);padding:.13em .35em;letter-spacing:.055em;background:var(--highlight)}
+.project-link,.formats a{font-size:.875rem}.project-link span:first-child{border-color:currentColor}::selection{background:var(--highlight);color:var(--ink)}
+@media(max-width:43rem){.hero h1{font-size:clamp(2.3rem,9vw,4.6rem)}.hero h1,.project h2,.prospect h2{letter-spacing:-.04em}}
 </style>
 </head>
 <body>
